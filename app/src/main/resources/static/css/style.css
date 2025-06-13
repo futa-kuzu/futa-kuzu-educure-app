@@ -1,0 +1,167 @@
+/* 共通スタイル */
+html {
+    background-color: #F8FAF5;
+    width: 620px;
+    margin: 170px auto 0;
+    font-family:
+        "ヒラギノ角ゴシック ProN W6",
+        "ヒラギノ角ゴシック ProN",
+        "Yu Gothic Medium",
+        "Meiryo",
+        sans-serif;
+    color: #707070;
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 100px;
+}
+
+body {
+    width: 620px;
+}
+
+a {
+    color: #25B672;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #a3e6cc;
+    text-decoration: none;
+}
+
+form {
+    margin-top: 100px;
+}
+
+label {
+    display: block;
+    margin-top: 90px;
+}
+
+input{
+    width: 100%;
+    font-size: 25px;
+    color: #707070;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #707070;
+    background-color: #F8FAF5;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+/* 共通ボタンスタイル */
+.button-common {
+    display: inline-block;
+    width: 300px;
+    padding: 3% 2%;
+    font-size: 20px;
+    margin-top: 52px;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+}
+
+/* 通常ボタン（buttonタグ用） */
+button.button-common {
+    background-color: #25B672;
+    color: #F8FAF5;
+    border: 2px solid #25B672;
+}
+
+button.button-common:hover {
+    background-color: #1e9a61;
+    border: 2px solid #1e9a61;
+}
+
+/* アウトラインボタン（aタグ用） */
+a.button-outline {
+    border: 2px solid #25B672;
+    background-color: transparent;
+    color: #25B672;
+}
+
+a.button-outline:hover {
+    background-color: #1e9a61;
+    color: #F8FAF5;
+    border: 2px solid #1e9a61;
+}
+
+/* 完了ページ用ボタン */
+.complete-page .button-common {
+    background-color: #25B672;
+    color: #F8FAF5;
+    border: 2px solid #25B672;
+}
+
+.complete-page .button-common:hover {
+    background-color: #F8FAF5;
+    color: #25B672;
+}
+
+/* フォーム内のボタン並び配置 */
+.form-actions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* リンク縦並び（例：ログイン画面の下部リンクなど） */
+.link-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 52px;
+}
+
+.link-group a {
+    margin-bottom: 12px;
+}
+
+/* 完了ページ（中央寄せ） */
+.complete-page {
+    text-align: center;
+}
+
+.complete-page h2 {
+    margin-top: 350px;
+}
+
+/* 確認画面レイアウト */
+.confirm-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+
+    color: #707070;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #707070;
+    background-color: #F8FAF5;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.confirm-wrapper label{
+    margin: 0;
+    width: 50%;
+    color: #ADADAD;
+}
+.confirm-wrapper input{
+    border-bottom: none;
+}
+.label-confirm-password{
+    margin-top: 105px;
+}
+
+
+/* エラーメッセージ */
+.error{
+	margin-top: 10px;
+	color: #FF6B6B;
+	display: block;
+}

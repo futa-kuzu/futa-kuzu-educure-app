@@ -1,0 +1,144 @@
+html{
+  width: 100%;
+  margin: 0;
+}
+body{
+  margin: 0 auto;
+  width: 800px;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 115px;
+}
+
+.chart-container {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  margin: 0 auto;
+}
+  
+.progress-ring {
+  transform: rotate(-90deg); /* 開始位置を12時方向に */
+}
+  
+circle {
+  fill: none;
+  r: 110;
+  cx: 137.5;
+  cy: 137.5;
+  stroke-linecap: round;
+}
+  
+.circle-bg {
+  stroke: #DBDBDB;
+  stroke-width: 6px; /* 線幅を太くして中心を合わせる */
+}
+  
+.circle-fg {
+  stroke: #25B672;
+  stroke-width: 17px;
+  stroke-dasharray: 691.15;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.6s ease;
+}
+  
+.percentage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #25B672;
+}
+
+/* menu-収支データ */
+.menu-dashboard{
+  background-color: #25B672;
+  color: #F8FAF5;
+  text-align: center;
+  border-radius: 4px;
+
+  margin-top: 65px;
+  padding: 20px 0px;
+
+}
+.data-wrapper{
+  display: flex;
+  width: 720px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.goal-wrapper{
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.data p{
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.line{
+  width: 720px;
+  height: 2px;
+  background-color: #F8FAF5;
+  display: inline-block;
+}
+
+/* menu-ボタン */
+.menu-action-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 横2つ */
+  gap: 12px; /* 要素間の隙間 */
+  width: 100%;
+  max-width: 800px;
+  margin: 45px auto 0;
+}
+
+.menu-action-button a {
+  height: 45px;
+  line-height: 45px;
+  background-color: #25B672;
+  color: #F8FAF5;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.menu-action-button a:hover {
+  background-color: #1e9a61;
+}
+
+/* アイコンの設定 */
+.menu-action-button a:nth-child(1)::before{
+  background-image: url("../images/insert.svg")
+}
+.menu-action-button a:nth-child(2)::before{
+  background-image: url("../images/goal.svg")
+}
+.menu-action-button a:nth-child(3)::before{
+  background-image: url("../images/data.svg")
+}
+.menu-action-button a:nth-child(4)::before{
+  background-image: url("../images/logout.svg")
+}
+.menu-action-button a:nth-child(5)::before{
+  background-image: url("../images/quit.svg")
+}
+
+.menu-action-button a::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}

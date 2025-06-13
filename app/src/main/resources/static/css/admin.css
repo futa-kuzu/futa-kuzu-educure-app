@@ -1,0 +1,103 @@
+.admin-menu-title{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    padding-bottom: 10px;
+    border-bottom: 2px solid #707070;
+
+    margin-top: 210px;
+}
+h1,
+p{
+    margin: 0;
+}
+
+.menu-action-button{
+    grid-template-columns: 1fr;
+}
+.menu-action-button a{
+    background-color: #69B9EE;
+    padding-left: 50px;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+.menu-action-button a:hover{
+    background-color: #629DDD;
+}
+button.button-common{
+    background-color: #69B9EE;
+    border: #69B9EE 2px solid;
+    transition: background-color 0.3s, border 0.3s;
+}
+button.button-common:hover{
+    background-color: #629DDD;
+    border: #629DDD 2px solid;
+}
+a.button-outline{
+    border: #69B9EE 2px solid;
+    color: #69B9EE;
+    transition: background-color 0.3s, border 0.3s;
+}
+a.button-outline:hover{
+    background-color: #629DDD;
+    border: #629DDD 2px solid;
+    color: #F8FAF5;
+}
+
+/* アイコンの設定 */
+.menu-action-button a:nth-child(1)::before{
+    background-image: url("../images/users.svg")
+}
+.menu-action-button a:nth-child(2)::before{
+    background-image: url("../images/manage.svg")
+}
+.menu-action-button a:nth-child(3)::before{
+    background-image: url("../images/logout.svg")
+}
+.menu-action-button a:nth-child(4)::before{
+    background-image: url("../images/quit.svg")
+}
+
+.complete-page a.admin-menu-back {
+    background-color: #69B9EE;
+    border: 2px solid #69B9EE;
+    color: #F8FAF5;
+}
+
+.complete-page a.admin-menu-back:hover {
+    background-color: #629DDD;
+    border: 2px solid #629DDD;
+    color: #F8FAF5;
+}
+
+.user-table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.user-table tbody tr:nth-child(odd){
+    background-color: rgba(74,144,226,0.2);
+    
+
+}
+.user-table tbody tr:nth-child(even){
+    background-color: #F8FAF5;
+}
+th{
+    padding: 10px 10px;
+    color: #B7B7B7;
+}
+td{
+    padding: 10px 10px;
+    color: #484848;
+}
+
+.user-all{
+    width: 800px;
+}
+.user-all-wrapper{
+    width: 100%;
+}
